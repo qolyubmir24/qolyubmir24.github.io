@@ -225,7 +225,7 @@
       ctx.scale(dpr, dpr);
       ctx.clearRect(0, 0, canvas.width / dpr, canvas.height / dpr);
 
-      // Outer ink border of strap
+      // Outer crust border of strap
       ctx.beginPath();
       ctx.moveTo(points[0].x, points[0].y);
       for (let i = 1; i < points.length - 1; i++) {
@@ -237,17 +237,17 @@
       ctx.lineCap = 'round';
       ctx.lineJoin = 'round';
       ctx.lineWidth = 17;
-      ctx.strokeStyle = '#071833';
+      ctx.strokeStyle = '#11111b';
       ctx.stroke();
 
-      // Inner cobalt blue lanyard ribbon
+      // Inner Catppuccin Surface0 ribbon
       ctx.lineWidth = 12;
-      ctx.strokeStyle = '#06337b';
+      ctx.strokeStyle = '#313244';
       ctx.stroke();
 
-      // Subtle yellow accent stripe down the strap
+      // Subtle Catppuccin Mauve accent stripe down the strap
       ctx.lineWidth = 2.5;
-      ctx.strokeStyle = '#f7d217';
+      ctx.strokeStyle = '#cba6f7';
       ctx.stroke();
       ctx.restore();
 
