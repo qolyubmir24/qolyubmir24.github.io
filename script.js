@@ -21,8 +21,7 @@
       num: '01',
       icon: 'fa-network-wired',
       title: 'Network Anomaly Detection & Clustering',
-      quote: 'Turning network flow telemetry into interpretable classification and clustering baselines.',
-      desc: 'Mengeksplorasi dataset CICIDS2017 untuk membedakan trafik normal dan serangan DDoS menggunakan Random Forest serta mereplikasi pipeline semi-supervised K-Means dengan seleksi fitur berbasis variance dan information gain.',
+      desc: 'I worked with the CICIDS2017 dataset to separate normal traffic from DDoS flows using Random Forest, and replicated a semi-supervised K-Means pipeline with variance and information-gain feature selection.',
       tags: ['Python', 'scikit-learn', 'Pandas', 'Random Forest', 'K-Means'],
       link: 'https://github.com/qolyubmir24/ML',
     },
@@ -30,17 +29,15 @@
       num: '02',
       icon: 'fa-seedling',
       title: 'Fuzzy Decision Support & Data Apps',
-      quote: 'Translating multi-criteria uncertainty into clear, interactive ranking dashboards.',
-      desc: 'Membangun aplikasi Sistem Pendukung Keputusan berbasis Logika Fuzzy Mamdani menggunakan scikit-fuzzy dan Streamlit untuk mengevaluasi kelayakan produksi padi antarprovinsi secara interaktif.',
+      desc: 'Built a Mamdani fuzzy inference app in Python with scikit-fuzzy and Streamlit to score and rank rice cultivation feasibility across Sumatra provinces.',
       tags: ['Python', 'Streamlit', 'scikit-fuzzy', 'Matplotlib', 'NumPy'],
       link: 'https://github.com/qolyubmir24/fuzzy-logic-scpk',
     },
     swe: {
       num: '03',
       icon: 'fa-laptop-code',
-      title: 'Object-Oriented & Interactive Web Foundations',
-      quote: 'Clean domain modeling and responsive client-side graphics.',
-      desc: 'Fondasi pemrograman berorientasi objek dengan Java (multithreading dan hierarki kelas), sistem kasir berbasis file C++, serta aplikasi grafika 2D interaktif dengan transformasi geometri pada HTML5 Canvas.',
+      title: 'Software & Web Foundations',
+      desc: 'Earlier coursework in Java OOP (inheritance and multithreading), a C++ file-backed store CLI, and an HTML5 Canvas 2D vector editor.',
       tags: ['Java OOP', 'C++', 'JavaScript', 'HTML5 Canvas', 'Git'],
       link: 'https://github.com/qolyubmir24/grafika-komputer-sederhana',
     },
@@ -50,7 +47,6 @@
   const fpNum = document.getElementById('fp-num');
   const fpIcon = document.getElementById('fp-icon');
   const fpTitle = document.getElementById('fp-title');
-  const fpQuote = document.getElementById('fp-quote');
   const fpDesc = document.getElementById('fp-desc');
   const fpTags = document.getElementById('fp-tags');
   const fpLink = document.getElementById('fp-link');
@@ -67,7 +63,6 @@
       fpNum.textContent = data.num;
       fpIcon.className = `fas ${data.icon}`;
       fpTitle.textContent = data.title;
-      fpQuote.textContent = data.quote;
       fpDesc.textContent = data.desc;
       fpTags.innerHTML = data.tags.map((t) => `<span>${t}</span>`).join('');
       fpLink.href = data.link;

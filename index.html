@@ -3,23 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mirwan Qolyubi — ML &amp; Data Science Portfolio</title>
-  <meta name="description" content="Portfolio of Mirwan Qolyubi, Informatics Engineering student at UPN Veteran Yogyakarta focusing on Machine Learning and Data Science with Python." />
+  <title>Mirwan Qolyubi | Portfolio</title>
+  <meta name="description" content="Personal portfolio of Mirwan Qolyubi, Informatics Engineering student at UPN Veteran Yogyakarta." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700&family=Literata:ital,wght@1,400&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-  <link rel="stylesheet" href="styles.css?v=20261112b" />
+  <link rel="stylesheet" href="styles.css?v=20261112c" />
 </head>
 <body class="catppuccin-mocha">
-  <!-- Subtle Animated Catppuccin Gradient Mesh Background -->
   <div class="bg-aurora" aria-hidden="true">
     <div class="aurora-layer aurora-1"></div>
     <div class="aurora-layer aurora-2"></div>
     <div class="aurora-layer aurora-3"></div>
   </div>
 
-  <!-- Navigation -->
   <header class="navbar">
     <div class="container nav-wrapper">
       <a href="#home" class="logo">
@@ -29,24 +27,23 @@
       <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
         <i class="fas fa-bars"></i>
       </button>
-      <nav class="nav-menu" id="nav-menu">
+      <nav class="nav-menu" id="nav-menu" aria-label="Primary navigation">
         <a href="#home">Home</a>
         <a href="#focus">Focus</a>
         <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
+        <a href="#skills">Stack</a>
         <a href="#contact" class="nav-cta">Contact</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <!-- Hero Section with Interactive Lanyard ID Card -->
     <section id="home" class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
           <div class="hero-eyebrow">
             <span class="status-dot"></span>
-            <span>Personal Portfolio · Yogyakarta</span>
+            <span>Yogyakarta, Indonesia</span>
           </div>
 
           <h1 class="f-head hero-title">
@@ -56,43 +53,42 @@
 
           <p class="hero-sub">
             Informatics Engineering student at UPN "Veteran" Yogyakarta.
-            A collection of my coursework, experiments, and projects in Machine Learning, Data Science, and Python.
+            Here is where I keep my Machine Learning, Data Science, and Python projects.
           </p>
 
           <div class="hero-actions">
             <a href="#projects" class="btn-neo btn-primary">
-              <span>View Projects</span>
+              <span>See Projects</span>
               <i class="fas fa-arrow-down"></i>
             </a>
             <a href="https://github.com/qolyubmir24" target="_blank" rel="noopener" class="btn-neo btn-secondary">
               <i class="fab fa-github"></i>
-              <span>GitHub Profile</span>
+              <span>GitHub</span>
             </a>
           </div>
 
           <div class="hero-metrics">
             <div class="metric-item">
               <strong class="f-head">3</strong>
-              <span>Flagship ML &amp; DS Repos</span>
+              <span>ML &amp; Data repos</span>
             </div>
             <div class="metric-divider"></div>
             <div class="metric-item">
               <strong class="f-head">Python</strong>
-              <span>Primary Research Stack</span>
+              <span>Main language</span>
             </div>
             <div class="metric-divider"></div>
             <div class="metric-item">
               <strong class="f-head">7+</strong>
-              <span>Public Repositories</span>
+              <span>Public repos</span>
             </div>
           </div>
         </div>
 
-        <!-- Right Column: Physics Lanyard ID Card -->
         <div class="hero-lanyard-wrap">
-          <div class="lanyard-hint f-hand">
-            <span>tarik &amp; ayunkan kartunya!</span>
-            <svg width="42" height="28" viewBox="0 0 42 28" fill="none" aria-hidden="true">
+          <div class="lanyard-hint">
+            <span>drag &amp; swing the card</span>
+            <svg width="36" height="24" viewBox="0 0 42 28" fill="none" aria-hidden="true">
               <path d="M4 6C16 4 28 10 34 22M34 22L25 20M34 22L36 13" stroke="#cba6f7" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </div>
@@ -101,13 +97,13 @@
             <div class="rope-anchor" aria-hidden="true"></div>
             <canvas id="rope-canvas" width="2000" height="1400" aria-hidden="true"></canvas>
 
-            <div id="card" class="card-container" role="region" aria-label="Interactive Developer Pass Card">
+            <div id="card" class="card-container" tabindex="0" role="region" aria-label="Interactive Profile Card">
               <div class="clip-hardware" aria-hidden="true">
                 <div class="clip-hook"></div>
               </div>
 
               <div class="card-body-neo">
-                <div class="card-sticker mark-yellow">ML &amp; DATA SCIENCE</div>
+                <div class="card-sticker mark-yellow">ML &amp; DATA</div>
                 <div class="card-slot" aria-hidden="true"></div>
 
                 <div class="id-card-top">
@@ -130,7 +126,6 @@
                 </div>
 
                 <div class="id-focus-strip">
-                  <div class="id-focus-label">PRIMARY STACK</div>
                   <div class="id-tags">
                     <span>Python</span>
                     <span>scikit-learn</span>
@@ -140,7 +135,7 @@
                 </div>
 
                 <div class="id-card-bottom">
-                  <span class="id-serial">PORTFOLIO PASS</span>
+                  <span class="id-serial">@qolyubmir24</span>
                   <span class="id-drag-pill"><i class="fas fa-hand-pointer"></i> Drag me</span>
                 </div>
               </div>
@@ -150,13 +145,11 @@
       </div>
     </section>
 
-    <!-- Focus Pillars Section (Interactive Tabs like BSI UII) -->
     <section id="focus" class="section-pad">
       <div class="container">
         <div class="section-head">
-          <span class="section-tag">Core Focus</span>
-          <h2 class="f-head">Bidang Eksplorasi &amp; Ketertarikan</h2>
-          <p class="section-lead">Fokus utama pada pemrosesan data dan machine learning dengan fondasi rekayasa perangkat lunak.</p>
+          <h2 class="f-head">What I Work On</h2>
+          <p class="section-lead">Mostly Python for data analysis and machine learning, alongside earlier Java, C++, and web coursework.</p>
         </div>
 
         <div class="focus-layout">
@@ -165,7 +158,7 @@
               <span class="tab-num f-head">01</span>
               <div class="tab-meta">
                 <strong>Machine Learning &amp; Clustering</strong>
-                <span>Anomaly detection &amp; paper replication</span>
+                <span>DDoS traffic classification and paper replication</span>
               </div>
               <i class="fas fa-chevron-right"></i>
             </button>
@@ -174,7 +167,7 @@
               <span class="tab-num f-head">02</span>
               <div class="tab-meta">
                 <strong>Decision Support &amp; Data Apps</strong>
-                <span>Fuzzy Mamdani &amp; Streamlit dashboards</span>
+                <span>Fuzzy Mamdani inference in Streamlit</span>
               </div>
               <i class="fas fa-chevron-right"></i>
             </button>
@@ -183,7 +176,7 @@
               <span class="tab-num f-head">03</span>
               <div class="tab-meta">
                 <strong>Software &amp; Web Foundations</strong>
-                <span>Java OOP, C++ CLI, &amp; 2D Canvas</span>
+                <span>Java OOP, C++ CLI, and 2D Canvas</span>
               </div>
               <i class="fas fa-chevron-right"></i>
             </button>
@@ -191,8 +184,7 @@
             <div class="card-dashed tip-box">
               <span class="tip-icon"><i class="fas fa-lightbulb"></i></span>
               <div>
-                <strong class="f-hand tip-title">tips:</strong>
-                <p>Klik tiap pilar di atas untuk melihat fokus riset, metode, dan repositori terkait.</p>
+                <p>Click any topic above to see the notes and repository behind it.</p>
               </div>
             </div>
           </div>
@@ -204,9 +196,8 @@
                 <div class="chip-kuning"><i class="fas fa-network-wired" id="fp-icon"></i></div>
               </div>
               <h3 class="f-head" id="fp-title">Network Anomaly Detection &amp; Clustering</h3>
-              <p class="f-quote focus-quote" id="fp-quote">Turning network flow telemetry into interpretable classification and clustering baselines.</p>
               <p class="focus-desc" id="fp-desc">
-                Mengeksplorasi dataset CICIDS2017 untuk membedakan trafik normal dan serangan DDoS menggunakan Random Forest serta mereplikasi pipeline semi-supervised K-Means dengan seleksi fitur berbasis variance dan information gain.
+                I worked with the CICIDS2017 dataset to separate normal traffic from DDoS flows using Random Forest, and replicated a semi-supervised K-Means pipeline with variance and information-gain feature selection.
               </p>
               <div class="focus-chips" id="fp-tags">
                 <span>Python</span>
@@ -215,7 +206,7 @@
                 <span>CICIDS2017</span>
               </div>
               <a href="https://github.com/qolyubmir24/ML" target="_blank" rel="noopener" class="focus-link" id="fp-link">
-                <span>Inspect Repository</span>
+                <span>Open repository</span>
                 <i class="fas fa-arrow-right"></i>
               </a>
             </article>
@@ -224,13 +215,11 @@
       </div>
     </section>
 
-    <!-- Featured Projects Section -->
     <section id="projects" class="section-pad">
       <div class="container">
         <div class="section-head-row">
           <div>
-            <span class="section-tag">Portfolio</span>
-            <h2 class="f-head">Featured Projects</h2>
+            <h2 class="f-head">Projects</h2>
           </div>
           <div class="filter-bar" role="tablist" aria-label="Filter projects">
             <button type="button" class="filter-btn active" data-filter="all">All (7)</button>
@@ -240,14 +229,13 @@
         </div>
 
         <div class="projects-grid" id="projects-grid">
-          <!-- ML 1 -->
           <article class="card-neo project-card" data-cat="ml">
             <div class="project-top">
               <div class="chip-neo"><i class="fas fa-shield-halved"></i></div>
               <span class="mark-yellow project-badge">DATA SCIENCE</span>
             </div>
             <h3 class="f-head">DDoS Traffic Anomaly Detection</h3>
-            <p>Binary classification pipeline distinguishing normal (BENIGN) and DDoS network traffic flows on the CICIDS2017 dataset using Random Forest.</p>
+            <p>Binary classifier built with Random Forest to separate benign traffic from DDoS flows on the CICIDS2017 dataset.</p>
             <div class="tech-stack">
               <span>Python</span>
               <span>Pandas</span>
@@ -255,19 +243,18 @@
               <span>Jupyter</span>
             </div>
             <a href="https://github.com/qolyubmir24/Data-Science-Practicum-Project_IF-H" target="_blank" rel="noopener" class="project-link">
-              <span>View Repository</span>
+              <span>View on GitHub</span>
               <i class="fas fa-arrow-right"></i>
             </a>
           </article>
 
-          <!-- ML 2 -->
           <article class="card-neo project-card" data-cat="ml">
             <div class="project-top">
               <div class="chip-neo"><i class="fas fa-diagram-project"></i></div>
               <span class="mark-yellow project-badge">ML RESEARCH</span>
             </div>
             <h3 class="f-head">Semi-Supervised K-Means DDoS</h3>
-            <p>Replication and analysis of Jasim &amp; Gaata (2022) evaluating hybrid feature selection, Canopy baseline, and K-Means clustering on CICIDS2017.</p>
+            <p>Replication of Jasim &amp; Gaata (2022) on CICIDS2017, comparing hybrid feature selection, a manual Canopy baseline, and StandardScaler behavior.</p>
             <div class="tech-stack">
               <span>Python</span>
               <span>scikit-learn</span>
@@ -275,19 +262,18 @@
               <span>StandardScaler</span>
             </div>
             <a href="https://github.com/qolyubmir24/ML" target="_blank" rel="noopener" class="project-link">
-              <span>View Repository</span>
+              <span>View on GitHub</span>
               <i class="fas fa-arrow-right"></i>
             </a>
           </article>
 
-          <!-- ML 3 -->
           <article class="card-neo project-card" data-cat="ml">
             <div class="project-top">
               <div class="chip-neo"><i class="fas fa-seedling"></i></div>
               <span class="mark-yellow project-badge">FUZZY DSS</span>
             </div>
             <h3 class="f-head">Fuzzy Mamdani Rice Production DSS</h3>
-            <p>Interactive Streamlit decision support app evaluating and ranking rice cultivation feasibility across Sumatra provinces from five criteria.</p>
+            <p>Streamlit web app that scores and ranks rice cultivation feasibility across Sumatra provinces from five agricultural and climate criteria.</p>
             <div class="tech-stack">
               <span>Python</span>
               <span>Streamlit</span>
@@ -295,83 +281,79 @@
               <span>Matplotlib</span>
             </div>
             <a href="https://github.com/qolyubmir24/fuzzy-logic-scpk" target="_blank" rel="noopener" class="project-link">
-              <span>View Repository</span>
+              <span>View on GitHub</span>
               <i class="fas fa-arrow-right"></i>
             </a>
           </article>
 
-          <!-- SWE 1 -->
           <article class="card-neo project-card" data-cat="swe">
             <div class="project-top">
               <div class="chip-neo"><i class="fas fa-bezier-curve"></i></div>
               <span class="cat-pill">WEB GRAPHICS</span>
             </div>
             <h3 class="f-head">2D Vector Graphics Canvas</h3>
-            <p>Interactive HTML5 Canvas and JavaScript drawing workspace supporting vector shapes, move, scale, rotate, shear transforms, and undo/redo.</p>
+            <p>Browser drawing tool in HTML5 Canvas and JavaScript with vector shapes, move, scale, rotate, shear transforms, and undo/redo.</p>
             <div class="tech-stack">
               <span>JavaScript</span>
               <span>HTML5 Canvas</span>
               <span>CSS3</span>
             </div>
             <a href="https://github.com/qolyubmir24/grafika-komputer-sederhana" target="_blank" rel="noopener" class="project-link">
-              <span>View Repository</span>
+              <span>View on GitHub</span>
               <i class="fas fa-arrow-right"></i>
             </a>
           </article>
 
-          <!-- SWE 2 -->
           <article class="card-neo project-card" data-cat="swe">
             <div class="project-top">
               <div class="chip-neo"><i class="fas fa-shapes"></i></div>
               <span class="cat-pill">JAVA OOP</span>
             </div>
             <h3 class="f-head">Ellipse Geometry Calculator</h3>
-            <p>Object-oriented Java console application implementing inheritance and multithreaded calculations for ellipses and derived 3D solids.</p>
+            <p>Java OOP console app that calculates properties of ellipses and derived 3D shapes with multithreaded workers.</p>
             <div class="tech-stack">
               <span>Java</span>
               <span>OOP</span>
               <span>Multithreading</span>
             </div>
             <a href="https://github.com/qolyubmir24/ellipse-geometry-calculator" target="_blank" rel="noopener" class="project-link">
-              <span>View Repository</span>
+              <span>View on GitHub</span>
               <i class="fas fa-arrow-right"></i>
             </a>
           </article>
 
-          <!-- SWE 3 -->
           <article class="card-neo project-card" data-cat="swe">
             <div class="project-top">
               <div class="chip-neo"><i class="fas fa-car-side"></i></div>
               <span class="cat-pill">JAVA OOP</span>
             </div>
             <h3 class="f-head">Berkendar Driving School System</h3>
-            <p>Java OOP application modeling driving school entities across student, instructor, vehicle hierarchy, and tiered exam packages.</p>
+            <p>Java OOP console program for managing driving school students, instructors, vehicle types, and exam tiers.</p>
             <div class="tech-stack">
               <span>Java</span>
               <span>OOP</span>
               <span>NetBeans</span>
             </div>
             <a href="https://github.com/qolyubmir24/berkendar-driving-school-system" target="_blank" rel="noopener" class="project-link">
-              <span>View Repository</span>
+              <span>View on GitHub</span>
               <i class="fas fa-arrow-right"></i>
             </a>
           </article>
 
-          <!-- SWE 4 -->
           <article class="card-neo project-card" data-cat="swe">
             <div class="project-top">
               <div class="chip-neo"><i class="fas fa-terminal"></i></div>
               <span class="cat-pill">C++ CLI</span>
             </div>
             <h3 class="f-head">CLI Store Inventory &amp; Cashier</h3>
-            <p>Console store simulation written in C++ featuring online/offline modes and persistent text-file storage for inventory and staff.</p>
+            <p>C++ console store simulation with online and offline modes that reads and writes stock, staff, and customer data to text files.</p>
             <div class="tech-stack">
               <span>C++</span>
               <span>File I/O</span>
               <span>CLI</span>
             </div>
             <a href="https://github.com/qolyubmir24/algorithm-advance-project" target="_blank" rel="noopener" class="project-link">
-              <span>View Repository</span>
+              <span>View on GitHub</span>
               <i class="fas fa-arrow-right"></i>
             </a>
           </article>
@@ -379,12 +361,10 @@
       </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills" class="section-pad">
       <div class="container">
         <div class="section-head">
-          <span class="section-tag">Capabilities</span>
-          <h2 class="f-head">Technical Stack</h2>
+          <h2 class="f-head">Tools &amp; Languages</h2>
         </div>
 
         <div class="skills-grid">
@@ -392,7 +372,6 @@
             <div class="skill-box-head">
               <div class="chip-kuning"><i class="fab fa-python"></i></div>
               <div>
-                <span class="skill-kicker">PRIMARY</span>
                 <h3 class="f-head">Machine Learning &amp; Data</h3>
               </div>
             </div>
@@ -412,7 +391,6 @@
             <div class="skill-box-head">
               <div class="chip-neo"><i class="fas fa-code"></i></div>
               <div>
-                <span class="skill-kicker">FOUNDATIONS</span>
                 <h3 class="f-head">Languages &amp; Web</h3>
               </div>
             </div>
@@ -429,12 +407,11 @@
             <div class="skill-box-head">
               <div class="chip-neo"><i class="fas fa-screwdriver-wrench"></i></div>
               <div>
-                <span class="skill-kicker">WORKFLOW</span>
-                <h3 class="f-head">Methods &amp; Tools</h3>
+                <h3 class="f-head">Methods &amp; Workflow</h3>
               </div>
             </div>
             <div class="skill-tags">
-              <span>EDA &amp; Preprocessing</span>
+              <span>EDA &amp; Cleaning</span>
               <span>Feature Selection</span>
               <span>Clustering &amp; Classification</span>
               <span>Git &amp; GitHub</span>
@@ -445,14 +422,12 @@
       </div>
     </section>
 
-    <!-- Navy CTA & Contact Section -->
     <section id="contact" class="section-pad">
       <div class="container">
         <div class="panel-navy">
           <div class="navy-copy">
-            <span class="mark-yellow navy-pill">LET'S CONNECT</span>
-            <h2 class="f-head">Open for ML &amp; Data Science Collaborations</h2>
-            <p>Interested in discussing machine learning projects, data analysis, or internship opportunities? Reach out directly through any channel below.</p>
+            <h2 class="f-head">Say Hello</h2>
+            <p>If you want to talk about a dataset, an ML experiment, or any project on this page, you can reach me here.</p>
           </div>
 
           <div class="navy-links">
@@ -470,7 +445,7 @@
             </a>
             <a href="mailto:mirwanqolyubi2@gmail.com" class="contact-neo contact-email">
               <i class="fas fa-envelope"></i>
-              <span>Email Me</span>
+              <span>Email</span>
             </a>
           </div>
         </div>
@@ -480,11 +455,11 @@
 
   <footer class="footer">
     <div class="container footer-inner">
-      <span>Mirwan Qolyubi · Informatics Engineering, UPN "Veteran" Yogyakarta</span>
-      <span>Built with vanilla HTML, CSS &amp; Verlet rope physics</span>
+      <span>Mirwan Qolyubi</span>
+      <span>Yogyakarta, Indonesia</span>
     </div>
   </footer>
 
-  <script src="script.js?v=20261112b"></script>
+  <script src="script.js?v=20261112c"></script>
 </body>
 </html>

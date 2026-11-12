@@ -120,14 +120,19 @@ footer {
   color: var(--text);
 }
 
-.f-hand {
-  font-family: 'Caveat', cursive;
-  font-weight: 700;
+/* Global accessible focus-visible ring & snappy Emil Kowalski motion curve */
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--mauve);
+  outline-offset: 3px;
 }
 
-.f-quote {
-  font-family: 'Literata', Georgia, serif;
-  font-style: italic;
+.metric-item strong,
+.tab-num,
+.idx-besar,
+.id-serial {
+  font-variant-numeric: tabular-nums;
 }
 
 .container {
@@ -409,9 +414,10 @@ footer {
   align-items: center;
   gap: 6px;
   color: var(--mauve);
-  font-size: 1.35rem;
-  transform: rotate(-4deg);
-  margin-bottom: -10px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  margin-bottom: -4px;
   z-index: 35;
   user-select: none;
 }
@@ -937,7 +943,8 @@ footer {
 }
 
 .filter-btn {
-  padding: 8px 15px;
+  padding: 10px 16px;
+  min-height: 44px;
   border-radius: 11px;
   border: 1.5px solid var(--surface1);
   background: var(--mantle);
@@ -946,7 +953,7 @@ footer {
   font-size: 0.86rem;
   cursor: pointer;
   box-shadow: 2.5px 2.5px 0 var(--crust);
-  transition: transform 0.15s ease, background-color 0.15s ease, color 0.15s ease;
+  transition: transform 140ms cubic-bezier(0.23, 1, 0.32, 1), background-color 140ms ease-out, color 140ms ease-out;
 }
 
 .filter-btn.active {
@@ -957,6 +964,10 @@ footer {
 
 .filter-btn:hover {
   transform: translate(-1px, -1px);
+}
+
+.filter-btn:active {
+  transform: scale(0.97);
 }
 
 .projects-grid {
